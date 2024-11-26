@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+body {
+overflow-x: hidden;
 }
+@media (min-width: 1400px) {
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  #containerHeader {
+    background-image: url(assets/img/head_img.jpg);
+    background-size: cover;
+    background-position: 40%;
+    height: 70vh;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media (max-width: 1200px) {
+
+  #containerHeader {
+    background-image: url(assets/img/head_img.jpg);
+    background-size: cover;
+    background-position: 45%;
+    height: 70vh;
+  }
+}
+
+@media (max-width: 768px) {
+
+  #containerHeader {
+    background-image: url(assets/img/head_img.jpg);
+    background-size: cover;
+    background-position: 54%;
+    height: 70vh;
+  }
+}
+
+@media (max-width: 480px) {
+
+  #containerHeader {
+    background-image: url(assets/img/head_img.jpg);
+    background-size: cover;
+    background-position: 53%;
+    height: 40vh;
+  }
+}
+
+#containerHeader {
+  background-image: url(assets/img/head_img.jpg);
+  background-size: cover;
+  background-attachment: fixed;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
   color: white;
+  height: 70vh;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  #restaurant_img {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
