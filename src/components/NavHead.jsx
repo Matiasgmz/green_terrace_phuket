@@ -28,16 +28,13 @@ export default function NavHead() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className="text-center" id="basic-navbar-nav">
             <Nav className="m-auto">
-              <Nav.Link className="fw-bold text-light" href="#home">
+              <Nav.Link className="fw-bold text-light" href="#about">
                 ABOUT
               </Nav.Link>
-              <Nav.Link className="fw-bold text-light" href="#link">
+              <Nav.Link className="fw-bold text-light" href="#menu">
                 MENU
               </Nav.Link>
-              <Nav.Link className="fw-bold text-light" href="#link">
-                ORDER FOOD
-              </Nav.Link>
-              <Nav.Link className="fw-bold text-light" href="#link">
+              <Nav.Link className="fw-bold text-light" href="#contact">
                 CONTACT
               </Nav.Link>
             </Nav>

@@ -1,51 +1,10 @@
 import React from "react";
 import restaurante from "../assets/img/restaurante_img.jpg";
-import chili from "../assets/img/chili.png";
-import lemon from "../assets/img/lemon.png";
-import { motion, useScroll, useTransform } from "framer-motion";
 
-export default function About() {
-  // Suivre la progression du scroll
-  const { scrollYProgress } = useScroll();
 
-  const chiliX = useTransform(scrollYProgress, [0.2, 0.35], ["-100%", "0%"]); // Arrive de la gauche
-  const lemonX = useTransform(scrollYProgress, [0.2, 0.35], ["100%", "0%"]); // Arrive de la droite
-
+export default function About() { 
   return (
-    <div className="container text-light" >
-      <motion.div
-        style={{
-          x: chiliX,
-          width: "300px",
-          height: "300px",
-          backgroundImage: `url(${chili})`,
-          backgroundSize: "cover",
-          rotate: "-15deg",
-          position: "absolute",
-          left: "0",
-          marginTop: "5vh",
-          zIndex: "1",
-          transform: "translateY(-75%)",
-        }}
-      />
-
-      {/* Citron (lemon) */}
-      <motion.div
-        style={{
-          x: lemonX,
-          width: "300px",
-          height: "200px",
-          backgroundImage: `url(${lemon})`,
-          backgroundSize: "cover",
-          rotate: "15deg",
-          position: "absolute",
-          right: "0",
-          marginTop: "10vh",
-          zIndex: "1",
-          transform: "translateY(-75%)",
-        }}
-      />
-
+    <div className="container text-light" id="about">
       <div className="row justify-content-around">
         <h2 style={{ zIndex: "2" }} className="my-5 text-center">
           ABOUT
@@ -59,7 +18,7 @@ export default function About() {
         </div>
         <div
           style={{ zIndex: "2" }}
-          className="col-12 col-xl-6 text-center fs-5 align-self-center"
+          className="col-12 col-xl-6 text-center fs-5 mt-5 align-self-center"
         >
           <p>
             Green Terrace welcomes you to a lush and refreshing space where the
